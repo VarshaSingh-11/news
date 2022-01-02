@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');
 .l-main__section--news h2 {
     color: #f8ef00;
-   
+    font-family: Nunito ,sans-serif;
     font-size: 44px;
     font-weight: 700;
     line-height: 1.2;
@@ -30,15 +31,7 @@ body{
     margin: 0;
     padding: 0;
 }
-ul{
-    display: flex;
-   
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-}
+
 
 .c-news--cyan .c-news__title {
     padding-top: 100px;
@@ -56,7 +49,7 @@ ul{
     box-sizing: border-box;
     color: #8c8c8c;
     display: flex;
-    height: 100%;
+    height: 80%;
     justify-content: space-between;
     overflow: hidden;
     padding: 0 30px 30px;
@@ -71,10 +64,10 @@ a{
     grid-gap: 23px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2,minmax(198px,auto));
+  
     list-style: none;
     margin: 0;
-    padding: 0 44px;
+    padding: 0 20px;
 }
 div{
     display:block;
@@ -84,16 +77,17 @@ div{
 }
 .c-news h3 {
     color: #ffffff;
-   
-    font-size: 26px;
-    font-weight: 700;
+  
+    font-size: 15px;
+    font-weight: 800;
     margin: 0;
-    width: 100%;
+    width: 80%;
     word-break: break-word;
+    padding-top: 10%;
 }
 h3 {
     display: block;
-    font-size: 1.17em;
+    font-size: 1em;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -104,33 +98,20 @@ h3 {
 .c-news--cyan:after {
     background: rgb(255, 255, 255);
 }
-.c-news:after {
-    background: hsl(0, 0%, 99%);
-    content: "";
-    display: block;
-    height: 3px;
-    left: 29px;
-    position: absolute;
-    top: 52px;
-    width: 53px;
-}
-.c-news__meta {
-    position: absolute;
-    right: 24px;
-    top: 44px;
-}
+
+
 *, :after, :before {
     box-sizing: inherit;
 }
 li{    display: list-item;
 
-   
+    
 }
 .c-news--cyan .c-news__date, .c-news--cyan .c-news__more-button {
     color: #000000;
 }
 .c-news span {
-   
+    display: inherit;
     overflow: hidden;
 }
 
@@ -143,15 +124,7 @@ li{    display: list-item;
 .c-news:hover .c-news__more-button {
     display: block;
 }
-.c-news__more-button {
-    background: none;
-    border: 0;
-    cursor: pointer;
-    display: none;
-    margin: 0;
-    outline: 0;
-    padding: 0;
-}
+
 button, input {
     overflow: visible;
 }
@@ -165,15 +138,12 @@ button, input, optgroup, select, textarea {
 .c-news__excerpt {
     color: #000;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.25;
     padding-left: 35px;
 }
 .c-news:hover:after {
     background: #000;
-}
-.c-news:hover{
-    background-color: #ffffff;
 }
 .c-news--cyan+.l-news__corner {
     border-color: #000 transparent transparent;
@@ -211,36 +181,38 @@ button, input, optgroup, select, textarea {
     letter-spacing: 2px;
     text-transform: uppercase;
 }
-body, button, input {
-    font-family: BlenderProBook,sans-serif;
+#last{
+    height:80%;
 }
-button {
-    
-   
-    text-rendering: auto;
-    color: -internal-light-dark(black, white);
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: center;
-    cursor: default;
-}button, input {
-    overflow: visible;
+#first{
+    height:120%;
+}
+#second{
+    height:120%;
+}
+#third{
+    height:80%;
+}
+#vishwas{
+    padding-top: 25%;
+}
+body, button, input {
+    font-family: Nunito ,sans-serif;
+}
+.product-img{
+    padding-top: 5%;
 }
 .c-news--last+.l-news__corner {
     background-color: #000;
     border-bottom: 1px solid #979797;
-    bottom: -11px;
-    height: 24px;
+    bottom: 21px;
+    height: 43px;
     position: absolute;
-    right: -11px;
+    right: -21px;
    
     transform: rotate(
 135deg);
-    width: 24px;
+    width: 44px;
 }
 .l-news li:nth-child(5) {
     grid-column: 3;
@@ -256,6 +228,6 @@ button {
 .l-main__section--news {
     margin: 0 auto;
     max-width: 1376px;
-    padding: 0 15px 6px;
+    padding: 0 1px 6px;
     position: relative;
 }
